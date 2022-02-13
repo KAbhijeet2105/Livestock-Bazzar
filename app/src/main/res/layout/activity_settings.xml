@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:context=".ui.activities.SettingsActivity">
+
+ <androidx.cardview.widget.CardView
+        android:id="@+id/card_settings_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:cardCornerRadius="@dimen/title_card_view_radius"
+        android:outlineAmbientShadowColor="@color/MediumLightGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+            <com.devabhijeet.livestockbazaar.utils.LBTextView
+                android:id="@+id/tv_title_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="@string/my_account_title"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_size_H3"
+                android:textColor="@color/colorPrimaryText"
+                />
+
+
+    </androidx.cardview.widget.CardView>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <FrameLayout
+            android:id="@+id/fl_user_image_settings"
+            android:layout_width="@dimen/settings_user_image_size"
+            android:layout_height="@dimen/settings_user_image_size"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/user_image_background" />
+
+            <ImageView
+                android:id="@+id/iv_user_photo_settings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/settings_user_picture_margin"
+                android:contentDescription="@string/content_description"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_vector_account" />
+
+
+        </FrameLayout>
+
+        <com.devabhijeet.livestockbazaar.utils.LBTextView
+            android:id="@+id/tv_edit_settings"
+            android:layout_width="@dimen/small_icon_height_width"
+            android:layout_height="@dimen/small_icon_height_width"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/ic_vector_settings"
+
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:paddingStart="@dimen/settings_edit_label_marginStartEnd"
+            android:paddingTop="@dimen/settings_edit_label_marginTopBottom"
+            android:paddingEnd="@dimen/settings_edit_label_marginStartEnd"
+            android:paddingBottom="@dimen/settings_edit_label_marginTopBottom"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="@dimen/settings_edit_label_textSize" />
+
+        <!--            android:text="@string/lbl_edit"-->
+
+
+        <com.devabhijeet.livestockbazaar.utils.LBTextViewBold
+            android:id="@+id/tv_full_name_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fl_user_image_settings"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/settings_name_marginTop"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="@dimen/settings_name_textSize"
+            tools:text="Mikasa Ackraman" />
+
+        <com.devabhijeet.livestockbazaar.utils.LBTextView
+            android:id="@+id/tv_gender_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_full_name_settings"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/settings_info_marginTop"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="@dimen/settings_info_textSize"
+            tools:text="Female" />
+
+        <com.devabhijeet.livestockbazaar.utils.LBTextView
+            android:id="@+id/tv_email_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_gender_settings"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/settings_info_marginTop"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="@dimen/settings_info_textSize"
+            tools:text="mikasa.ackraman@gmail.com" />
+
+        <com.devabhijeet.livestockbazaar.utils.LBTextView
+            android:id="@+id/tv_mobile_number_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_email_settings"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/settings_info_marginTop"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="@dimen/settings_info_textSize"
+            tools:text="123456789" />
+
+
+        <com.devabhijeet.livestockbazaar.utils.LBTextView
+            android:id="@+id/tv_address_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_mobile_number_settings"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/settings_info_marginTop"
+            android:layout_marginEnd="24dp"
+            android:gravity="center"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="@dimen/settings_lbl_addresses_textSize"
+            tools:text="718/55 a ward, near SBI Bank, kolhapur " />
+
+
+        <com.devabhijeet.livestockbazaar.utils.LBButton
+            android:id="@+id/btn_logout_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_address_settings"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/settings_button_marginStartEnd"
+            android:layout_marginTop="@dimen/settings_button_marginTopBottom"
+            android:layout_marginEnd="@dimen/settings_button_marginStartEnd"
+            android:layout_marginBottom="@dimen/settings_button_marginTopBottom"
+            android:background="@drawable/button_background"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingTop="@dimen/btn_padding"
+            android:paddingBottom="@dimen/btn_padding"
+            android:text="@string/btn_lbl_logout"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_Button" />
+
+    </RelativeLayout>
+</ScrollView>
+
+</LinearLayout>

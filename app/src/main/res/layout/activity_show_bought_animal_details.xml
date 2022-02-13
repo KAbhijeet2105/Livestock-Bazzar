@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.ShowBoughtAnimalDetailsActivity">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_titile_bought_animal_details"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:cardCornerRadius="@dimen/title_card_view_radius"
+        android:outlineAmbientShadowColor="@color/MediumLightGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <com.devabhijeet.livestockbazaar.utils.LBTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text="@string/title_bought_animal_details"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_H3"
+            android:textColor="@color/colorPrimaryText"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_titile_bought_animal_details"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <FrameLayout
+                android:id="@+id/fl_animal_image_bought_animal_details"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/add_product_header_image_height"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_animal_image_bought_animal_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorImageViewBackground"
+                    android:contentDescription="@string/content_description"
+                    android:scaleType="fitXY" />
+
+
+            </FrameLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_animal_images_bought_animal_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:itemCount="4"
+                tools:listitem="@layout/images_item" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_breed_bought_animal_details"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:enabled="false"
+                android:textColorHint="@color/colorSecondaryText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rv_animal_images_bought_animal_details">
+
+                <com.devabhijeet.livestockbazaar.utils.LBEditText
+                    android:id="@+id/et_category_bought_animal_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:padding="@dimen/et_padding"
+                    android:textColor="@color/colorSecondaryText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:editable="false"
+                    app:layout_constraintTop_toBottomOf="@id/fl_animal_image_bought_animal_details"
+                    tools:text="Animal Category" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_animal_breed_bought_animal_details"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:enabled="false"
+
+                android:textColorHint="@color/colorSecondaryText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/til_breed_bought_animal_details">
+
+                <com.devabhijeet.livestockbazaar.utils.LBEditText
+                    android:id="@+id/et_animal_breed_bought_animal_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:editable="false"
+
+                    android:padding="@dimen/et_padding"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="@dimen/text_size_Body"
+                    tools:text="Animal Breed" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_animal_price_bought_animal_details"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:enabled="false"
+
+                android:textColorHint="@color/colorSecondaryText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/til_animal_breed_bought_animal_details">
+
+                <com.devabhijeet.livestockbazaar.utils.LBEditText
+                    android:id="@+id/et_animal_price_bought_animal_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:editable="false"
+
+                    android:padding="@dimen/et_padding"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="@dimen/text_size_Body"
+                    tools:text="Price" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_animal_description_bought_animal_details"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:enabled="false"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/til_animal_price_bought_animal_details">
+
+                <com.devabhijeet.livestockbazaar.utils.LBEditText
+                    android:id="@+id/et_animal_description_bought_animal_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:minLines="3"
+                    android:editable="false"
+
+                    android:padding="@dimen/et_padding"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="@dimen/text_size_Body"
+                    tools:text="Description" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_seller_details_bought_animal_details"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/til_animal_description_bought_animal_details"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/my_order_details_content_paddingStartEnd"
+                android:paddingTop="@dimen/my_order_details_content_paddingTopBottom"
+                android:paddingEnd="@dimen/my_order_details_content_paddingStartEnd"
+                android:paddingBottom="@dimen/my_order_details_content_paddingTopBottom">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                <com.devabhijeet.livestockbazaar.utils.LBTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/bought_animal_details_lbl_buy_date"
+                    android:textColor="@color/colorDarkGrey"
+                    android:textSize="@dimen/my_order_details_label_value_textSize" />
+
+                <com.devabhijeet.livestockbazaar.utils.LBTextView
+                    android:id="@+id/tv_bought_animal_details_buy_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="@dimen/my_order_details_label_value_textSize"
+                    tools:text="29 Jan 2022" />
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.devabhijeet.livestockbazaar.utils.LBTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/bought_animal_details_lbl_seller_name"
+                    android:textColor="@color/colorDarkGrey"
+                    android:textSize="@dimen/my_order_details_label_value_textSize" />
+
+                <com.devabhijeet.livestockbazaar.utils.LBTextView
+                    android:id="@+id/tv_seller_name_bought_animal_details_buy_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="@dimen/my_order_details_label_value_textSize"
+                    tools:text="Levi Ackraman" />
+
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <com.devabhijeet.livestockbazaar.utils.LBTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/bought_animal_details_lbl_seller_mobile_num"
+                        android:textColor="@color/colorDarkGrey"
+                        android:textSize="@dimen/my_order_details_label_value_textSize" />
+
+                    <com.devabhijeet.livestockbazaar.utils.LBTextView
+                        android:id="@+id/tv_seller_mobile_bought_animal_details_buy_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="@dimen/my_order_details_label_value_textSize"
+                        tools:text="+91 8985541267" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_ok_bought_animal_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_background"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingTop="@dimen/btn_padding"
+                android:paddingBottom="@dimen/btn_padding"
+                android:text="@string/btn_lbl_ok"
+                android:textColor="@android:color/white"
+
+                android:textSize="@dimen/text_size_Button"
+                app:icon="@drawable/ic_vector_ok"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ll_seller_details_bought_animal_details"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

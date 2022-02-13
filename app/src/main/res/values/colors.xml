@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+
+    <color name="primary">#7BED8D</color>
+<!--    <color name="primary">#0DB665</color>-->
+    <color name="primaryDark">#222934</color>
+    <color name="colorAccent">#7BED8D</color>
+
+<!--    50 shades of gray..-->
+
+    <color name="DarkerGrey">#465460</color>
+    <color name="DarkGrey">#53606C</color>
+    <color name="MediumGrey">#60707E</color>
+    <color name="MediumLightGrey">#A6B8C9</color>
+    <color name="LightGrey">#DCE2EB</color>
+    <color name="LighterGrey">#F4F5F7</color>
+
+<color name="textWhite">#FFFFFF</color>
+ <color name="textDark">#53606C</color>
+    <color name="colorPrimaryText">#7BED8D</color>
+    <color name="colorSecondaryText">#989898</color>
+
+
+    <color name="colorSnackBarSuccess">#8BC34A</color>
+    <color name="colorSnackBarError">#F72400</color>
+
+    <color name="colorLightGrey">#F1F1F1</color>
+
+    <color name="colorBorder">#E8E6E6</color>
+    <color name="colorDarkGrey">#878787</color>
+
+    <color name="colorImageViewBackground">#E1E1E1</color>
+
+    <color name="colorOffWhite">#F8F8F8</color>
+    <color name="item_value_text_color">#545353</color>
+
+    <color name="dashboard_item_details_bg">#F3F3F3</color>
+
+    <color name="colorOrderStatusInProcess">#FF9800</color>
+    <color name="colorOrderStatusDelivered">#8BC34A</color>
+
+
+
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

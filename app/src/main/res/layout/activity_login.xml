@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.LoginActivity">
+
+
+    <com.devabhijeet.livestockbazaar.utils.LBTextView
+        android:id="@+id/tv_title_login_acivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="70dp"
+        android:text="@string/title_login"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/text_size_H1"
+
+
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_email_login_activity"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/et_hint_email_id"
+        android:textColorHint="@color/LightGrey"
+        app:startIconDrawable="@drawable/ic_vector_email"
+        app:startIconTint="@color/LightGrey"
+
+        >
+
+        <com.devabhijeet.livestockbazaar.utils.LBEditText
+            android:id="@+id/et_email_login_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:padding="@dimen/et_padding"
+            android:textColor="@color/MediumGrey"
+            android:textSize="@dimen/text_size_Body"
+
+            />
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_password_login_activity"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/et_hint_password"
+        android:textColorHint="@color/LightGrey"
+        app:startIconDrawable="@drawable/ic_vector_padlock"
+        app:startIconTint="@color/LightGrey"
+        >
+
+        <com.devabhijeet.livestockbazaar.utils.LBEditText
+            android:id="@+id/et_password_login_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:padding="@dimen/et_padding"
+            android:textColor="@color/MediumGrey"
+            android:textSize="@dimen/text_size_Body"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.devabhijeet.livestockbazaar.utils.LBTextViewBold
+        android:id="@+id/tv_forgot_password_login_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="@dimen/clickable_text_view_padding"
+        android:text="@string/lbl_forget_password"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/text_size_Body"
+
+        />
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login_login_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp"
+        android:fontFamily="@font/mandali"
+        app:rippleColor="@color/primary"
+        android:gravity="left|center_vertical"
+        android:layout_gravity="center"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/button_background"
+        android:foreground="?attr/selectableItemBackground"
+        android:paddingTop="@dimen/btn_padding"
+        android:paddingBottom="@dimen/btn_padding"
+        android:text="@string/btn_lbl_login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_Button"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_vector_arrow_forward"
+        app:iconTint="@color/white"
+        
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+
+      >
+
+        <com.devabhijeet.livestockbazaar.utils.LBTextView
+            android:id="@+id/tv_don_t_have_an_account_login_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="@dimen/clickable_text_view_padding"
+            android:text="@string/don_t_have_an_account"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="@dimen/text_size_Link" />
+
+        <com.devabhijeet.livestockbazaar.utils.LBTextViewBold
+            android:id="@+id/tv_register_login_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="@dimen/clickable_text_view_padding"
+            android:text="@string/register"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="@dimen/text_size_Link" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

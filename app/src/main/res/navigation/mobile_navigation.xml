@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_dashboard">
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.devabhijeet.livestockbazaar.ui.fragments.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_sell_animals"
+        android:name="com.devabhijeet.livestockbazaar.ui.fragments.SellAnimalFragment"
+        android:label="@string/title_sellAnimal"
+        tools:layout="@layout/fragment_sell_animals" />
+
+
+    <fragment
+        android:id="@+id/navigation_sold_animals"
+        android:name="com.devabhijeet.livestockbazaar.ui.fragments.SoldAnimalFragment"
+        android:label="@string/title_soldAnimal"
+        tools:layout="@layout/fragment_sold_animals" />
+
+    <fragment
+        android:id="@+id/navigation_bought_animals"
+        android:name="com.devabhijeet.livestockbazaar.ui.fragments.BoughtAnimalFragment"
+        android:label="@string/title_boughtAnimal"
+        tools:layout="@layout/fragment_bought_animal"  />
+
+</navigation>

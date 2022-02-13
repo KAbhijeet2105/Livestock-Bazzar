@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.ShowMyQRActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_show_my_qrtitle"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:cardCornerRadius="@dimen/title_card_view_radius"
+        android:outlineAmbientShadowColor="@color/MediumLightGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <com.devabhijeet.livestockbazaar.utils.LBTextView
+            android:id="@+id/tv_title_show_my_qr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text="@string/title_show_my_qr"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_H3"
+            android:textColor="@color/colorPrimaryText"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+
+        android:id="@+id/iv_my_qr_code"
+        android:layout_width="@dimen/qr_code_width"
+        android:layout_height="@dimen/qr_code_height"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_show_my_qrtitle"
+        app:layout_constraintVertical_bias="0.421" />
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_ok_show_my_qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="40dp"
+        android:paddingStart="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_my_qr_code"
+        android:background="@drawable/button_background"
+        android:foreground="?attr/selectableItemBackground"
+        android:paddingTop="@dimen/btn_padding"
+        android:paddingBottom="@dimen/btn_padding"
+        android:text="@string/btn_lbl_ok"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_Button"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_vector_ok"
+        app:iconTint="@color/white"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

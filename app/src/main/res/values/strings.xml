@@ -1,0 +1,162 @@
+<resources>
+    <string name="app_name">Livestock Bazaar</string>
+
+    <string name="title_activity_dash_board">DashBoardActivity</string>
+
+    <string name="title_sellAnimal">Sell Animals</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_soldAnimal">Sold Animals</string>
+    <string name="title_boughtAnimal">Bought Animals</string>
+
+    <string name="please_click_back_again_to_exit">Please click back again to exit.</string>
+
+
+    <string name="action_my_qr">Show My QR</string>
+    <string name="action_settings">Settings</string>
+    <string name="content_description">image</string>
+
+
+    <!--    login screen strings-->
+
+    <string name="title_login">Sign In</string>
+    <string name="et_hint_email_id">Email</string>
+    <string name="et_hint_password">Password</string>
+    <string name="lbl_forget_password">Forgot Password?</string>
+    <string name="btn_lbl_login">SIGN IN</string>
+
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="register"><u>Register</u></string>
+
+
+    <!--register screen activity -->
+    <string name="title_create_account">Create Account</string>
+
+    <string name="et_hint_full_name">Full Name</string>
+
+    <string name="btn_lbl_create_account">CREATE ACCOUNT</string>
+
+    <string name="already_have_an_account">Already have an account?</string>
+
+
+    <string name="err_msg_enter_full_name">Please enter first name.</string>
+    <string name="err_msg_enter_email">Please enter email.</string>
+    <string name="err_msg_enter_password">Please enter password.</string>
+    <string name="register_success">Registration successful! </string>
+
+    <!--    progrss dialog -->
+    <string name="please_wait">Please Wait&#8230;</string>
+
+    <!--  forgot password activity-->
+    <string name="title_forgot_password">FORGOT PASSWORD?</string>
+    <string name="forgot_password_title_description">Enter your e-mail address we\'ll send you a email to reset your password</string>
+    <string name="btn_lbl_submit">Submit</string>
+    <string name="email_sent_success">\"Email sent successfully to reset your password! \"</string>
+
+
+    <!--    view profile/account details  -->
+
+    <string name="my_account_title">My Account</string>
+    <string name="title_edit_profile">EDIT PROFILE</string>
+
+    <string name="hint_phone_number">Phone number</string>
+    <string name="hint_address">Address</string>
+    <string name="et_hint_mobile_number">Mobile Number</string>
+    <string name="rb_lbl_male">MALE</string>
+    <string name="rb_lbl_female">FEMALE</string>
+    <string name="btn_lbl_save">Save</string>
+
+
+    <!--    5.12 -->
+
+    <string name="title_settings">SETTINGS</string>
+    <string name="lbl_edit">Edit</string>
+    <string name="lbl_addresses">Addresses</string>
+    <string name="btn_lbl_logout">Logout</string>
+
+    <!--    6.... -->
+
+
+    <string-array name="Animal_Categories">
+        <item>Select Your Animal Category</item>
+        <item>Cow</item>
+        <item>Buffalo</item>
+        <item>Ox</item>
+        <item>Dog</item>
+        <item>Cat</item>
+        <item>Sheep</item>
+        <item>Goat</item>
+        <item>Hen/Cock</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="Animal_Categories_Dashboard">
+        <item>Select Your Animal Category</item>
+        <item>All Categories</item>
+        <item>Cow</item>
+        <item>Buffalo</item>
+        <item>Ox</item>
+        <item>Dog</item>
+        <item>Cat</item>
+        <item>Sheep</item>
+        <item>Goat</item>
+        <item>Hen/Cock</item>
+        <item>Other</item>
+    </string-array>
+
+
+    <string name="action_add_animal">Add Animal</string>
+
+    <string name="title_add_animal">ADD ANIMAL</string>
+
+    <string name="et_hint_animal_price">Animal Price (₹)</string>
+    <string name="et_hint_animal_description">Animal Description eg. weight,age,special discount etc. </string>
+
+
+    <string name="title_sold_animals">Sold Animals</string>
+
+    <string name="no_animals_sold_yet">No animals sold yet!</string>
+
+    <string name="title_sold_animal_details">SOLD ANIMAL DETAILS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="err_msg_enter_mobile_number">please enter valid mobile number</string>
+    <string name="err_msg_enter_address">please enter valid address</string>
+    <string name="image_selection_failed">Failed to select the image.</string>
+    <string name="read_storage_permission_denied"><![CDATA[Permissions are denied, Please give the required permission. You can do it by going settings->app->permissions]]></string>
+    <string name="msg_profile_ukpdate_success">Profile updated successfully.</string>
+    <string name="title_show_my_qr">My QR Code</string>
+    <string name="btn_lbl_ok">OK</string>
+    <string name="no_animals_added_yet">No animals added yet.</string>
+    <string name="title_add_animal_for_sell">Add Animal</string>
+    <string name="et_hint_animal_breed">Animal Breed</string>
+    <string name="err_msg_select_animal_image">Please select proper animal image.</string>
+    <string name="err_msg_enter_animal_breed">Please enter your animal breed.</string>
+    <string name="err_msg_enter_animal_price">Please enter animal price that you desire.</string>
+    <string name="err_msg_enter_animal_description">Please enter animal description,extra details about your animal</string>
+    <string name="err_msg_select_animal_category">Please select your animal category</string>
+    <string name="animal_uploaded_success_message">Congratulations!! Your animal listed succesfully for sell.</string>
+    <string name="delete_dialog_title">Delete Animal</string>
+    <string name="delete_dialog_message">"Your animal will be removed,  Are you sure ?  "</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="product_delete_success_message">Animal removed successfully.</string>
+    <string name="no_animals_found">No animals found.</string>
+    <string name="title_animals_sell_and_details">Animal Details</string>
+    <string name="call_owner">Call </string>
+    <string name="message_owner">Message </string>
+    <string name="title_animals_sell_to_buyer">Sell Your Animal</string>
+    <string name="btn_lbl_scan_qr">Scan QR</string>
+    <string name="sell_animal_dialog_title">Sell Animal</string>
+    <string name="sell_animal_dialog_message">Are you sure about selling this animal  ?</string>
+    <string name="no_animals_bought">No animals bought.</string>
+    <string name="title_bought_animal_details">Bought Animal Details</string>
+    <string name="bought_animal_details_lbl_buy_date">Buy Date</string>
+    <string name="bought_animal_details_lbl_seller_name">Seller Name</string>
+    <string name="bought_animal_details_lbl_seller_mobile_num">Seller Mobile:</string>
+    <string name="bought_animal_details_lbl_customer_name">Customer Name</string>
+    <string name="sold_animal_details_lbl_customer_mobile_num">Customer Mobile No.</string>
+    <string name="sold_animal_details_lbl_sell_date">Sold Date</string>
+    <string name="add_animal_images_label_text">Animal Images (Max 4)</string>
+
+
+</resources>

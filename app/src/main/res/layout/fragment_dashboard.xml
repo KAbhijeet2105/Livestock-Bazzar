@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.DashboardFragment">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:cardCornerRadius="@dimen/title_card_view_radius"
+        android:outlineAmbientShadowColor="@color/MediumLightGrey"
+ >
+    <LinearLayout
+        android:layout_marginTop="@dimen/title_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginEnd="6dp"
+        >
+
+
+        <com.devabhijeet.livestockbazaar.utils.LBTextView
+            android:id="@+id/tv_title_dashboard_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:layout_margin="6dp"
+            android:text="@string/title_dashboard"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/text_size_H3"
+            android:textColor="@color/colorPrimaryText"
+          />
+
+        <com.devabhijeet.livestockbazaar.utils.LBTextView
+            android:id="@+id/tv_action_show_qr_dashboard_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.45"
+            android:layout_marginTop="@dimen/icon_around_margin_top_bottom"
+            android:layout_marginBottom="@dimen/icon_around_margin_top_bottom"
+            android:layout_marginStart="@dimen/icon_around_margin_start_end"
+            android:layout_marginEnd="@dimen/icon_around_margin_start_end"
+            android:background="@drawable/ic_vector_show_qr_code"
+            android:backgroundTint="@color/MediumLightGrey"
+            />
+
+        <com.devabhijeet.livestockbazaar.utils.LBTextView
+            android:id="@+id/tv_action_setting_dashboard_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.45"
+            android:layout_marginTop="@dimen/icon_around_margin_top_bottom"
+            android:layout_marginBottom="@dimen/icon_around_margin_top_bottom"
+            android:layout_marginStart="@dimen/icon_around_margin_start_end"
+            android:layout_marginEnd="@dimen/icon_around_margin_start_end"
+            android:background="@drawable/ic_vector_settings"
+            android:backgroundTint="@color/MediumLightGrey"
+            />
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:cardCornerRadius="@dimen/title_card_view_radius"
+        android:outlineAmbientShadowColor="@color/MediumLightGrey"
+        >
+        <LinearLayout
+            android:layout_marginTop="@dimen/title_margin_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginEnd="6dp"
+            >
+
+
+            <Spinner
+                android:id="@+id/spinr_category_filter_dashboard_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+<!--here recycler view -->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_dashboard_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="40dp"
+            android:visibility="gone"
+
+            />
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/tv_no_dashboard_items_found"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/no_animals_found"
+            android:textAlignment="center"
+            android:textSize="@dimen/no_data_found_textSize"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+<!-- <EditText
+                android:id="@+id/et_search_seller_dashboard_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:singleLine="true"
+                android:drawableEnd="@drawable/ic_vector_search"
+
+                />-->

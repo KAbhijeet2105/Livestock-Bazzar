@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "145259346657",
+    "project_id": "livestock-bazaar",
+    "storage_bucket": "livestock-bazaar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145259346657:android:72a3bb881aec9f6df6d5a0",
+        "android_client_info": {
+          "package_name": "com.devabhijeet.livestockbazaar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "145259346657-t78u266m6vac1o31lem5hto55qv1min0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devabhijeet.livestockbazaar",
+            "certificate_hash": "52ef53aa30245b773a41b70f89527b46dcc2e7a5"
+          }
+        },
+        {
+          "client_id": "145259346657-n7u7k29s4gfdhcil4iumpd2aaceds3vf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDUyPlf_YVoxNFfvymkM1j8ENLsFPlqbk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "145259346657-n7u7k29s4gfdhcil4iumpd2aaceds3vf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
